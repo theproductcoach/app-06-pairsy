@@ -12,6 +12,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Pairsy - Adventures are better shared",
   description: "Meet other couples for shared activities and adventures",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
