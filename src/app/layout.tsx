@@ -15,6 +15,10 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
 };
 
 export default function RootLayout({
@@ -24,10 +28,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" style={{ fontFamily: inter.style.fontFamily }}>
-      <head>
-        <title>Pairsy - Adventures are better shared</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
       <body suppressHydrationWarning>
         <AuthProvider>{children}</AuthProvider>
       </body>
